@@ -6,7 +6,7 @@ This project is a simple MP3 music player interface. The interface contains basi
 
 
 **Installation**</br>
-Installation and use of this project requires the user to accurately input the file path of the location of their music in the places where specified (Commented in program). If correctly done, there should be no other edits that need to be made to the project.
+Installation and use of this project requires the user to accurately input the file path of the location of their music in the places where specified (Commented in program: "*FILE PATH BEFORE SONG TITLE*"). If correctly done, there should be no other edits that need to be made to the project.
 
 
 **Challenges**</br>
