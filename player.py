@@ -33,7 +33,7 @@ def play_time():
     # Get song title
     song = music_box.get(ACTIVE)
     # add dir structure and mp3 to song title
-    song = f'C:/User/rohit/Desktop/Learning Projects/Music Player/audio/{song}.mp3'
+    song = f'*FILE PATH BEFORE SONG TITLE*{song}.mp3'
     # load and get song length
     song_mutagen = MP3(song)
 
@@ -79,7 +79,7 @@ def play_time():
 def add_song():
     song = filedialog.askopenfilename(initialdir='audio/', title="Choose Song", filetypes=(("mp3 Files", "*.mp3"), ))
     # strip dir info and .mp3 extension from name
-    song = song.replace("C:/User/rohit/Desktop/Learning Projects/Music Player/audio/", "")
+    song = song.replace("*FILE PATH BEFORE SONG TITLE*", "")
     song = song.replace(".mp3", "")
     # add song
     music_box.insert(END, song)
@@ -89,7 +89,7 @@ def add_multiple_songs():
     songs = filedialog.askopenfilenames(initialdir='audio/', title="Choose Song", filetypes=(("mp3 Files", "*.mp3"), ))
     # loop through songs
     for song in songs:
-        song = song.replace("C:/User/rohit/Desktop/Learning Projects/Music Player/audio/", "")
+        song = song.replace("*FILE PATH BEFORE SONG TITLE*", "")
         song = song.replace(".mp3", "")
         # add song
         music_box.insert(END, songs)
@@ -102,7 +102,7 @@ def play():
     stopped = False
 
     song = music_box.get(ACTIVE)
-    song = f'C:/User/rohit/Desktop/Learning Projects/Music Player/audio/{song}.mp3'
+    song = f'*FILE PATH BEFORE SONG TITLE*{song}.mp3'
     pygame.mixer.music.load(song)
     pygame.mixer.music.play(loops=0)
     # Call play_time()
@@ -170,7 +170,7 @@ def back():
     # Get song title
     song = music_box.get(current_song)
     # add dir structure and mp3 to song title
-    song = f'C:/User/rohit/Desktop/Learning Projects/Music Player/audio/{song}.mp3'
+    song = f'*FILE PATH BEFORE SONG TITLE*{song}.mp3'
     # load and play song
     pygame.mixer.music.load(song)
     pygame.mixer.music.play(loops=0)
@@ -189,7 +189,7 @@ def forward():
     # Get song title
     song = music_box.get(current_song)
     # add dir structure and mp3 to song title
-    song = f'C:/User/rohit/Desktop/Learning Projects/Music Player/audio/{song}.mp3'
+    song = f'*FILE PATH BEFORE SONG TITLE*{song}.mp3'
     # load and play song
     pygame.mixer.music.load(song)
     pygame.mixer.music.play(loops=0)
@@ -220,7 +220,7 @@ def remove_all_songs():
 def slide(x):
     # slider_label.config(text=f'{int(my_slider.get())} of {int(song_length)}')
     song = music_box.get(ACTIVE)
-    song = f'C:/User/rohit/Desktop/Learning Projects/Music Player/audio/{song}.mp3'
+    song = f'*FILE PATH BEFORE SONG TITLE*{song}.mp3'
     pygame.mixer.music.load(song)
     pygame.mixer.music.play(loops=0, start=int(my_slider.get()))
 
